@@ -4,10 +4,11 @@ This plugin adds support to sync events from multiple Facebook pages and show th
 
 ```
 composer require pageon/stitcher-fb-events
-# Project config file
 ```
 
 ```yaml
+# Project config file
+
 plugins:
     - Pageon\Stitcher\FbEventsPlugin
 ```
