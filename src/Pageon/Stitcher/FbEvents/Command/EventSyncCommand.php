@@ -2,6 +2,7 @@
 
 namespace Pageon\Stitcher\FbEvents\Command;
 
+use Brendt\Stitcher\App;
 use Carbon\Carbon;
 use GuzzleHttp\Client;
 use GuzzleHttp\Psr7\Uri;
@@ -44,8 +45,8 @@ class EventSyncCommand extends Command
     }
 
     protected function execute(InputInterface $input, OutputInterface $output) {
-        $since = Carbon::now()->subDays(7)->timestamp;
-        $until = Carbon::now()->addDays(7)->timestamp;
+        $since = Carbon::now()->subDays(App::getParameter('fb.events.days.past'))->timestamp;
+        $until = Carbon::now()->addDays(App::getParameter('fb.events.days.future'))->timestamp;
         $events = [];
 
         foreach ($this->pages as $page) {
@@ -73,7 +74,8 @@ class EventSyncCommand extends Command
         }
 
         $fs = new Filesystem();
-        $eventFile = "{$this->srcDir}/data/_fb_events.yml";
+        $fileName = App::getParameter('fb.events.file');
+        $eventFile = "{$this->srcDir}/{$fileName}";
         $fs->dumpFile($eventFile, Yaml::dump(['entries' => $events], 10));
         $output->writeln("Events saved in {$eventFile}.");
     }

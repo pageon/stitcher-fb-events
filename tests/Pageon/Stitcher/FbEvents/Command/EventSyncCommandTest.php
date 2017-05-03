@@ -27,7 +27,7 @@ class EventSyncCommandTest extends CommandTestCase
      * @test
      */
     public function it_can_sync_events() {
-        $output = $this->runCommand('fb:events:sync');
+        $this->runCommand('fb:events:sync');
 
         $fs = new Filesystem();
         $this->assertTrue($fs->exists('./tests/src/data/_fb_events.yml'));
