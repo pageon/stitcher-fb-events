@@ -1,3 +1,5 @@
-fb.events:
-    access.token: ''
-    pages: []
+fb.events.access.token: ''
+fb.events.pages: []
+fb.events.days.past: 7
+fb.events.days.future: 7
+fb.events.file: data/_fb_events.yml
