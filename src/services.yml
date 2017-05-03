@@ -1,0 +1,7 @@
+services:
+    fb.events.command.sync:
+        class: Pageon\Stitcher\FbEvents\Command\EventSyncCommand
+        arguments:
+            - '%fb.events.access.token%'
+            - '%directories.src%'
+            - '%fb.events.pages%'
