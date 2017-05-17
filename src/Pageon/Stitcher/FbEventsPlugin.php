@@ -5,17 +5,12 @@ namespace Pageon\Stitcher;
 use Brendt\Stitcher\App;
 use Brendt\Stitcher\Application\Console;
 use Brendt\Stitcher\Plugin\Plugin;
+use Pageon\Stitcher\FbEvents\Command\EventSyncCommand;
 
 class FbEventsPlugin implements Plugin
 {
-    /**
-     * @return void
-     */
-    public function init() {
-        /** @var Console $console */
-        $console = App::get('app.console');
-
-        $console->add(App::get('fb.events.command.sync'));
+    public function __construct(Console $console, EventSyncCommand $syncCommand) {
+        $console->add($syncCommand);
     }
 
     /**
@@ -23,7 +18,7 @@ class FbEventsPlugin implements Plugin
      *
      * @return null|string
      */
-    public function getConfigPath() {
+    public static function getConfigPath() {
         return __DIR__ . '/../../config.yml';
     }
 
@@ -32,7 +27,7 @@ class FbEventsPlugin implements Plugin
      *
      * @return null|string
      */
-    public function getServicesPath() {
+    public static function getServicesPath() {
         return __DIR__ . '/../../services.yml';
     }
 }
