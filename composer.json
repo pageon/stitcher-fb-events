@@ -12,7 +12,7 @@
     "minimum-stability": "stable",
     "require": {
         "php": ">=7.0",
-        "brendt/stitcher": "dev-master",
+        "pageon/stitcher-core": "@beta",
         "guzzlehttp/psr7": "^1.4",
         "nesbot/carbon": "^1.22",
         "guzzlehttp/guzzle": "^6.2"

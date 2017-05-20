@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "456f19c26042eab73058b33f44c8386a",
-    "content-hash": "bfea8c875b4b49ba193346c4cfe8cbdd",
+    "hash": "95d02943a10cd2226aca3e9d010ab8ee",
+    "content-hash": "b68dbffe96862b2bfa644eef37d12437",
     "packages": [
         {
             "name": "brendt/responsive-images",
@@ -50,72 +50,6 @@
             ],
             "description": "Create responsive images with PHP, using the srcset and sizes spec.",
             "time": "2017-04-23 07:10:30"
-        },
-        {
-            "name": "brendt/stitcher",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/brendt/stitcher.git",
-                "reference": "ae6204c225440753ab6cf407c20e340d00ae6a42"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/brendt/stitcher/zipball/ae6204c225440753ab6cf407c20e340d00ae6a42",
-                "reference": "ae6204c225440753ab6cf407c20e340d00ae6a42",
-                "shasum": ""
-            },
-            "require": {
-                "brendt/responsive-images": "^1.5",
-                "erusev/parsedown": "^1.6",
-                "leafo/scssphp": "^0.6.6",
-                "mrclay/minify": "^2.3",
-                "pageon/html-meta": "^1.0",
-                "php": ">=7.0",
-                "smarty/smarty": "^3.1",
-                "symfony/config": "^3.2",
-                "symfony/console": "^3.1",
-                "symfony/dependency-injection": "^3.1",
-                "symfony/event-dispatcher": "^3.2",
-                "symfony/filesystem": "^3.1",
-                "symfony/finder": "^3.1",
-                "symfony/routing": "^3.1",
-                "symfony/yaml": "^3.1",
-                "tivie/htaccess-parser": "^0.2@dev",
-                "twig/twig": "~1.0"
-            },
-            "require-dev": {
-                "larapack/dd": "^1.0",
-                "phpunit/phpunit": "^6.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Brendt\\Stitcher\\": "src/Brendt/Stitcher"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Brent",
-                    "email": "brent@pageon.be"
-                }
-            ],
-            "description": "Create blazing fast websites with PHP, a template engine of your choice and YAML or JSON.",
-            "homepage": "http://stitcher.pageon.be",
-            "keywords": [
-                "generator",
-                "performance",
-                "seo",
-                "smarty",
-                "static",
-                "static site",
-                "twig"
-            ],
-            "time": "2017-05-17 06:41:14"
         },
         {
             "name": "erusev/parsedown",
@@ -552,16 +486,16 @@
         },
         {
             "name": "pageon/html-meta",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/pageon/html-meta.git",
-                "reference": "1a07ccea6ad426d4182173fa96be7d4878491b8d"
+                "reference": "2e6042292d3555ea750fccc99849f5933c15bde0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pageon/html-meta/zipball/1a07ccea6ad426d4182173fa96be7d4878491b8d",
-                "reference": "1a07ccea6ad426d4182173fa96be7d4878491b8d",
+                "url": "https://api.github.com/repos/pageon/html-meta/zipball/2e6042292d3555ea750fccc99849f5933c15bde0",
+                "reference": "2e6042292d3555ea750fccc99849f5933c15bde0",
                 "shasum": ""
             },
             "require": {
@@ -594,7 +528,73 @@
                 "meta tags",
                 "seo"
             ],
-            "time": "2017-04-23 14:38:19"
+            "time": "2017-05-18 05:09:46"
+        },
+        {
+            "name": "pageon/stitcher-core",
+            "version": "1.0.0-beta1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/pageon/stitcher-core.git",
+                "reference": "b6a28ebcbfeb9935f68b5920b28b32b00a70659c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/pageon/stitcher-core/zipball/b6a28ebcbfeb9935f68b5920b28b32b00a70659c",
+                "reference": "b6a28ebcbfeb9935f68b5920b28b32b00a70659c",
+                "shasum": ""
+            },
+            "require": {
+                "brendt/responsive-images": "^1.5",
+                "erusev/parsedown": "^1.6",
+                "leafo/scssphp": "^0.6.6",
+                "mrclay/minify": "^2.3",
+                "pageon/html-meta": "^1.0",
+                "php": ">=7.0",
+                "smarty/smarty": "^3.1",
+                "symfony/config": "^3.2",
+                "symfony/console": "^3.1",
+                "symfony/dependency-injection": "^3.1",
+                "symfony/event-dispatcher": "^3.2",
+                "symfony/filesystem": "^3.1",
+                "symfony/finder": "^3.1",
+                "symfony/routing": "^3.1",
+                "symfony/yaml": "^3.1",
+                "tivie/htaccess-parser": "^0.2@dev",
+                "twig/twig": "~1.0"
+            },
+            "require-dev": {
+                "larapack/dd": "^1.0",
+                "phpunit/phpunit": "^6.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Brendt\\Stitcher\\": "src/Brendt/Stitcher"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Brent",
+                    "email": "brent@pageon.be"
+                }
+            ],
+            "description": "Create blazing fast websites with PHP, a template engine of your choice and YAML or JSON.",
+            "homepage": "http://stitcher.pageon.be",
+            "keywords": [
+                "generator",
+                "performance",
+                "seo",
+                "smarty",
+                "static",
+                "static site",
+                "twig"
+            ],
+            "time": "2017-05-18 05:10:53"
         },
         {
             "name": "ps/image-optimizer",
@@ -2604,23 +2604,23 @@
         },
         {
             "name": "sebastian/diff",
-            "version": "1.4.1",
+            "version": "1.4.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/diff.git",
-                "reference": "13edfd8706462032c2f52b4b862974dd46b71c9e"
+                "reference": "3c7d21999e815cdfac70c6c7d79d3a9cb1bc7bc2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/13edfd8706462032c2f52b4b862974dd46b71c9e",
-                "reference": "13edfd8706462032c2f52b4b862974dd46b71c9e",
+                "url": "https://api.github.com/repos/sebastianbergmann/diff/zipball/3c7d21999e815cdfac70c6c7d79d3a9cb1bc7bc2",
+                "reference": "3c7d21999e815cdfac70c6c7d79d3a9cb1bc7bc2",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.3"
+                "php": "^5.3.3 || ^7.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.8"
+                "phpunit/phpunit": "^4.8.35 || ^5.7 || ^6.0"
             },
             "type": "library",
             "extra": {
@@ -2652,20 +2652,20 @@
             "keywords": [
                 "diff"
             ],
-            "time": "2015-12-08 07:14:41"
+            "time": "2017-05-18 13:44:30"
         },
         {
             "name": "sebastian/environment",
-            "version": "3.0.2",
+            "version": "3.0.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/environment.git",
-                "reference": "11e7710b7724d42c62249b0e9d3030240398949d"
+                "reference": "02b6b2c7aefe2cdb1185b8dbf8718b0bcedf3ab3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/11e7710b7724d42c62249b0e9d3030240398949d",
-                "reference": "11e7710b7724d42c62249b0e9d3030240398949d",
+                "url": "https://api.github.com/repos/sebastianbergmann/environment/zipball/02b6b2c7aefe2cdb1185b8dbf8718b0bcedf3ab3",
+                "reference": "02b6b2c7aefe2cdb1185b8dbf8718b0bcedf3ab3",
                 "shasum": ""
             },
             "require": {
@@ -2702,7 +2702,7 @@
                 "environment",
                 "hhvm"
             ],
-            "time": "2017-04-21 14:40:32"
+            "time": "2017-05-18 10:10:00"
         },
         {
             "name": "sebastian/exporter",
@@ -3214,7 +3214,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "brendt/stitcher": 20
+        "pageon/stitcher-core": 10
     },
     "prefer-stable": false,
     "prefer-lowest": false,
